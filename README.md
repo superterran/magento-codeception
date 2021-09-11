@@ -7,14 +7,9 @@ Magento development and performing some work with an agency.
 
 1. [Install Warden](https://docs.warden.dev/installing.html#)
 2. [Install Magento 2](https://docs.warden.dev/environments/magento2.html)
-3. `warden sign-certificate codeception`
-
-
-```bash
-	vendor/bin/codecept run
-```
-or
+3. `warden sign-certificate app.codeception.test`
 
 ```bash
+    make selenium-start
     make run
 ```
