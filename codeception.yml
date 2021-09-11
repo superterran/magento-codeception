@@ -6,7 +6,7 @@ suites:
         modules:
             enabled:
                 - WebDriver:
-                    url: app.codeception.test
+                    url: https://app.codeception.test/
                     browser: chrome
                 - \Helper\Acceptance
                 
