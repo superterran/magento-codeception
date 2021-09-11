@@ -21,7 +21,10 @@ phpserver/
 pub/
 SECURITY.md
 setup/
-tests/
+
 .user.ini
 var/
 vendor/
+
+tests/_output
+tests/_support/_generated
