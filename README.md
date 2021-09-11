@@ -8,4 +8,13 @@ Magento development and performing some work with an agency.
 1. [Install Warden](https://docs.warden.dev/installing.html#)
 2. [Install Magento 2](https://docs.warden.dev/environments/magento2.html)
 3. `warden sign-certificate codeception`
-4. 
+
+
+```bash
+	vendor/bin/codecept run
+```
+or
+
+```bash
+    make run
+```
