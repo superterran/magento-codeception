@@ -12,8 +12,25 @@ class LoginCest
         $I->amOnSubdomain("app.codeception.test");
     }
     
-    public function loginWithInvalidPassword(AcceptanceTester $I)
+    public function proceedPastWarning(AcceptanceTester $I)
     {
-        // write a negative login test
-    }       
+        $I->amOnPage('/');
+        $I->click('Advanced');
+        $I->click("Proceed to app.codeception.test (unsafe)");
+        $I->click("Create an Account");
+        $I->click("Sign Up for Newsletter");
+     
+    }
+    
+    public function createAnAccount(AcceptanceTester $I)
+    {
+        
+
+        // $I->submitForm('#signup', ['username' => 'MilesDavis', 'email' => 'miles@davis.com']);
+        // $I->see('Thank you for Signing Up!');
+        // $I->seeEmailSent('miles@davis.com', 'Thank you for registration');
+        // $I->seeInDatabase('users', ['email' => 'miles@davis.com']);
+
+    }
+
 }
